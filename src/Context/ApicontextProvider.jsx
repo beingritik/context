@@ -5,7 +5,6 @@ import Apicontext from "./ApiContext";
 const ApicontextProvider = ({ children }) => {
   let url = import.meta.env.VITE_URL;
   const userList = useFetch(url);
-  console.log("userdata::", userList);
   const [editif, seteditif] = useState(null);
   const [userListData, setUserListData] = useState(userList);
   const [editflag, seteditFlag] = useState(false);

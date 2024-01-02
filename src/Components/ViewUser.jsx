@@ -11,7 +11,6 @@ function ViewUser() {
   useEffect(() => {
       const singlevalue = userListData.filter((user) => user.id === Number(id));
       if (singlevalue.length > 0) {
-        console.log("singlevalue", singlevalue);
         setsingleinfo(singlevalue[0]);
       } else {
         setsingleinfo("no user found");

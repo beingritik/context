@@ -17,7 +17,6 @@ function Subedit() {
       }
       return user;
     });
-    console.log("VRSd", editedUserList);
     setUserListData(editedUserList);
     seteditFlag(false);
   };

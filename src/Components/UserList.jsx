@@ -7,23 +7,17 @@ import { Link } from "react-router-dom";
 function UserList() {
   const { userListData, seteditFlag } = useContext(ApiContext);
   let {seteditif} = useContext(ApiContext);
-  console.log("userListData in compo", userListData);
-
   const [edit,setedit] = useState(false)
-
   const editHandler = (id)=>{
-    console.log("ised",id);
     setedit(true)
     seteditif(id)
     seteditFlag(true)
   }
 
+
   const viewItem = ()=>{
-    
   }
-
   return (
-
     <>
     {edit ? <Edit/> : "no comp"}
         <h1>Users are</h1>
