@@ -7,6 +7,8 @@ function ViewUser() {
   const { id } = useParams();
   const [singleinfo, setsingleinfo] = useState(null);
   console.log(id);
+  console.log("viewed list",userListData);
+  console.log("viewed",singleinfo);
 
   useEffect(() => {
       const singlevalue = userListData.filter((user) => user.id === Number(id));

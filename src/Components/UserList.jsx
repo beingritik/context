@@ -14,10 +14,7 @@ function UserList() {
     seteditFlag(true)
   }
 
-
-  const viewItem = ()=>{
-  }
-  return (
+   return (
     <>
     {edit ? <Edit/> : "no comp"}
         <h1>Users are</h1>
